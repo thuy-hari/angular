@@ -1,0 +1,38 @@
+Reactive - ngModel,required
+
+
+FormGroup - Top Level API
+---------
+Keeps track of the Values and Validation Status
+
+
+FormControl 
+----------
+
+- Individual form FormControl - 
+ track of the Values and Validation Status
+
+
+interface User {
+    name:string;
+    account:{
+        email:string;
+        confirm:string
+    }
+}
+Javascript = API-
+---------------
+FormGroup -> 'User'
+    FormControl -> 'name'
+    FormGroup - > 'account'
+        FormControl-'email'
+        FormControl-'confirm'
+
+DOM Bindings
+-----------
+
+formGroupName -> 'User'
+    formControlName -> 'name'
+    formGroupName - > 'account'
+        formControlName-'email'
+        formControlName-'confirm'
